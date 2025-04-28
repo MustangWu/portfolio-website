@@ -8,7 +8,7 @@ import {clsx} from 'clsx';
 import {motion} from 'framer-motion';
 import constantUtils from '@/app/utils/constantUtils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function BannerCard() {
     return (
@@ -85,23 +85,6 @@ export default function BannerCard() {
                                                     className={clsx(styles.underlineAnimation, 'text-blue-700', styles.glowAnimation)}
                                                 >
                                                     {constantUtils.linkedin.replace('https://www.linkedin.com/in/', '').replace('mustangwu05042001/', 'mustangwu')}
-                                                </a>
-                                            </HoverCard.Trigger>
-                                        </HoverCard.Root>
-                                    </Text>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <FontAwesomeIcon icon={faXTwitter} className="w-4 h-4 text-gray-700"/>
-                                    <Text>
-                                        <HoverCard.Root>
-                                            <HoverCard.Trigger>
-                                                <a
-                                                    href={constantUtils.twitter}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className={clsx(styles.underlineAnimation, 'text-blue-700', styles.glowAnimation)}
-                                                >
-                                                    MustangWu
                                                 </a>
                                             </HoverCard.Trigger>
                                         </HoverCard.Root>
