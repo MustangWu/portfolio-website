@@ -26,6 +26,7 @@ export default function ProjectCard2({ cardInfo }: { cardInfo: infoParam }) {
       >
         <Card
           style={{ maxWidth: 300 }}
+          className="dark:bg-gray-800 dark:border-gray-700"
           cover={
             <motion.div
               whileHover={{
@@ -45,7 +46,10 @@ export default function ProjectCard2({ cardInfo }: { cardInfo: infoParam }) {
             </motion.div>
           }
         >
-          <Meta title={cardInfo.title} description={cardInfo.description} />
+          <Meta 
+            title={<div className="dark:text-white">{cardInfo.title}</div>} 
+            description={<div className="dark:text-gray-300">{cardInfo.description}</div>} 
+          />
         </Card>
       </motion.div>
     </Link>

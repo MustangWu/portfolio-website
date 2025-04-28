@@ -64,25 +64,25 @@ const constants = {
       date: "2024 - Present",
       title: "Monash University",
       content: "Pursuing master of IT while working as a full-stack developer",
-      type: "ongoing",
+      type: "ongoing"
     },
     {
       date: "2022 - 2023",
       title: "5i5j Real Estate",
       content: "Data Engineer",
-      type: "success",
+      type: "success"
     },
     {
       date: "2021 - 2022",
       title: "iQIYI.com",
       content: "Software Engineer Intern",
-      type: "success",
+      type: "success"
     },
     {
       date: "2018 - 2022",
       title: "Zhejiang University of Finance and Economics",
       content: "Pursuing bachelor of Arts",
-      type: "success",
+      type: "success"
     },
   ],
   // https://lf3-starry.byteimg.com/obj/starry/image/xeujaamdeoq_数据资产沉淀.png

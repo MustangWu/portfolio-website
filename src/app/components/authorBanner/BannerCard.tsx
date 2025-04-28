@@ -40,7 +40,7 @@ export default function BannerCard() {
                     }}
                 >
                     <Container
-                        className="z-50 relative backdrop-blur-3xl bg-gradient-to-r from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 p-8 rounded-xl border border-white/20 shadow-2xl">
+                        className="z-50 relative backdrop-blur-3xl bg-gradient-to-r from-white/40 to-white/20 p-8 rounded-xl border border-white/20 shadow-2xl">
                         <div className="flex items-center space-x-4 mb-4">
                             <Avatar className="w-32 h-32 border-2 border-white shadow-lg"
                                     src={constantUtils.companyLogo} alt="Author"
@@ -48,16 +48,16 @@ export default function BannerCard() {
                                     radius='large'
                                     fallback={'Avatar'}/>
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-300">{constantUtils.companyName}</h2>
-                                <p className="text-sm text-gray-600 mt-1 dark:text-gray-400">{constantUtils.authorBanner.bannerBrief}</p>
+                                <h2 className="text-2xl font-bold text-gray-800">{constantUtils.companyName}</h2>
+                                <p className="text-sm text-gray-600 mt-1">{constantUtils.authorBanner.bannerBrief}</p>
                             </div>
                         </div>
                         <div className="space-y-2">
                             <p
-                                className="text-gray-700 dark:text-gray-300">{constantUtils.authorBanner.bannerDesc}</p>
+                                className="text-gray-700">{constantUtils.authorBanner.bannerDesc}</p>
                             <div className="links flex space-x-4">
                                 <div className="flex items-center space-x-2">
-                                    <GitHubLogoIcon className="w-5 h-5 text-gray-700 dark:text-gray-300"/>
+                                    <GitHubLogoIcon className="w-5 h-5 text-gray-700"/>
                                     <Text>
                                         <HoverCard.Root>
                                             <HoverCard.Trigger>
@@ -65,7 +65,7 @@ export default function BannerCard() {
                                                     href={constantUtils.github}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className={clsx(styles.underlineAnimation, 'text-blue-700 dark:text-blue-400', styles.glowAnimation)}
+                                                    className={clsx(styles.underlineAnimation, 'text-blue-700', styles.glowAnimation)}
                                                 >
                                                     {constantUtils.github.replace('https://github.com/', '')}
                                                 </a>
@@ -74,7 +74,7 @@ export default function BannerCard() {
                                     </Text>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 text-gray-700 dark:text-gray-300"/>
+                                    <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4 text-gray-700"/>
                                     <Text>
                                         <HoverCard.Root>
                                             <HoverCard.Trigger>
@@ -82,7 +82,7 @@ export default function BannerCard() {
                                                     href={constantUtils.linkedin}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className={clsx(styles.underlineAnimation, 'text-blue-700 dark:text-blue-400', styles.glowAnimation)}
+                                                    className={clsx(styles.underlineAnimation, 'text-blue-700', styles.glowAnimation)}
                                                 >
                                                     {constantUtils.linkedin.replace('https://www.linkedin.com/in/', '').replace('mustangwu05042001/', 'mustangwu')}
                                                 </a>
@@ -91,7 +91,7 @@ export default function BannerCard() {
                                     </Text>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <FontAwesomeIcon icon={faXTwitter} className="w-4 h-4 text-gray-700 dark:text-gray-300"/>
+                                    <FontAwesomeIcon icon={faXTwitter} className="w-4 h-4 text-gray-700"/>
                                     <Text>
                                         <HoverCard.Root>
                                             <HoverCard.Trigger>
@@ -99,7 +99,7 @@ export default function BannerCard() {
                                                     href={constantUtils.twitter}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className={clsx(styles.underlineAnimation, 'text-blue-700 dark:text-blue-400', styles.glowAnimation)}
+                                                    className={clsx(styles.underlineAnimation, 'text-blue-700', styles.glowAnimation)}
                                                 >
                                                     MustangWu
                                                 </a>

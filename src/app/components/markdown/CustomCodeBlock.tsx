@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { Badge, Button, ScrollArea } from "@radix-ui/themes";
-import { useTheme } from "next-themes";
 import { jetbrains_mono } from "@/app/fonts/font";
 import theme from "./theme/CustomTheme";
 import fallbackTheme from "./theme/FallbackTheme";
@@ -20,12 +19,11 @@ interface CodeBlockProps {
 
 const CustomCodeBlock: React.FC<CodeBlockProps> = ({ language, value }) => {
   const [copied, setCopied] = useState(false);
-  const { resolvedTheme } = useTheme();
   const [currentTheme, setCurrentTheme] = useState<{
     [key: string]: React.CSSProperties;
-  }>(fallbackTheme);
-  const [bgClass, setBgClass] = useState("");
-  const [lineNumberBg, setLineNumberBg] = useState("transparent");
+  }>(theme.customSolarizedLightAtom);
+  const [bgClass, setBgClass] = useState(styles.lightBg);
+  const [lineNumberBg, setLineNumberBg] = useState("#f1f1f1");
 
   const handleCopy = () => {
     setCopied(true);
@@ -33,24 +31,14 @@ const CustomCodeBlock: React.FC<CodeBlockProps> = ({ language, value }) => {
   };
 
   useEffect(() => {
-    setCurrentTheme(
-      resolvedTheme === "dark"
-        ? theme.customSolarizedDarkAtom
-        : theme.customSolarizedLightAtom
-    );
-    setBgClass(resolvedTheme === "dark" ? styles.darkBg : styles.lightBg);
-    setLineNumberBg(resolvedTheme === "dark" ? "#242424" : "#f1f1f1");
     document.documentElement.style.setProperty(
       "--scrollbar-color",
-      resolvedTheme === "dark" ? "#2f2f2f transparent" : "#cacaca transparent"
+      "#cacaca transparent"
     );
     return () => {
-      setCurrentTheme(fallbackTheme);
-      setBgClass("");
-      setLineNumberBg("transparent");
       document.documentElement.style.removeProperty("--scrollbar-color");
     };
-  }, [resolvedTheme]);
+  }, []);
 
   return (
     <ScrollArea radius={"full"} asChild>

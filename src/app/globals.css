@@ -5,6 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light;
+}
+
+html {
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +23,39 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 覆盖所有dark:类名选择器 */
+.dark\:bg-gray-900 {
+  background-color: white !important;
+}
+.dark\:bg-gray-800 {
+  background-color: white !important;
+}
+.dark\:border-gray-700 {
+  border-color: #e5e7eb !important;
+}
+.dark\:text-white {
+  color: #111827 !important;
+}
+.dark\:text-gray-300 {
+  color: #374151 !important;
+}
+.dark\:text-gray-400 {
+  color: #4b5563 !important;
+}
+.dark\:text-gray-100 {
+  color: #111827 !important;
+}
+.dark\:text-indigo-400 {
+  color: #4f46e5 !important;
+}
+.dark\:text-indigo-300 {
+  color: #6366f1 !important;
+}
+.dark\:from-black\/40 {
+  --tw-gradient-from: rgba(255, 255, 255, 0.4) !important;
+}
+.dark\:to-black\/20 {
+  --tw-gradient-to: rgba(255, 255, 255, 0.2) !important;
 }

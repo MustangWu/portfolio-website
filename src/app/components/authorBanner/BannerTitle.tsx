@@ -15,13 +15,17 @@ export default function BannerTitle() {
     <div
       style={{
         transition: "all 0.5s",
+        color: "#111827",
       }}
       className={clsx(
         styles.bannerInfo,
         "flex flex-col justify-center flex-1 p-8"
       )}
     >
-      <div className={clsx(varela_round.className, styles.title)}>
+      <div 
+        className={clsx(varela_round.className, styles.title)}
+        style={{ color: "#111827" }}
+      >
         <ReactTyped
           strings={[constantUtils.authorBanner.bannerTitle]}
           fadeOut={true}
@@ -34,7 +38,10 @@ export default function BannerTitle() {
           }}
         />
       </div>
-      <div className={clsx(playwrite_us_modern.className, styles.subtitle)}>
+      <div 
+        className={clsx(playwrite_us_modern.className, styles.subtitle)}
+        style={{ color: "#111827" }}
+      >
         <ReactTyped
           strings={[constantUtils.authorBanner.bannerSubtitle]}
           typeSpeed={20}
