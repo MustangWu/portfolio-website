@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         { module: /node_modules\/@douyinfe\/semi-ui/ }
       ];
     }
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      // 提供react-dom/client导出findDOMNode的兼容性实现
+      'react-dom': 'react-dom/profiling',
+    };
     return config;
   },
 };
