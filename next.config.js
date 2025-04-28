@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
 
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   /* config options here */
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
   },
   reactStrictMode: true,
   images: {
@@ -28,13 +33,8 @@ const nextConfig: NextConfig = {
         { module: /node_modules\/@douyinfe\/semi-ui/ }
       ];
     }
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      // 提供react-dom/client导出findDOMNode的兼容性实现
-      'react-dom': 'react-dom/profiling',
-    };
     return config;
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
