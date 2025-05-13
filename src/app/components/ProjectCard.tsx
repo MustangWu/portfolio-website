@@ -16,7 +16,7 @@ type infoParam = {
 
 export default function ProjectCard2({ cardInfo }: { cardInfo: infoParam }) {
   const { Meta } = Card;
-  
+
   return (
     <Link href={cardInfo.link || `/projects/${cardInfo.id}`} target="_blank" rel="noopener noreferrer">
       <motion.div
