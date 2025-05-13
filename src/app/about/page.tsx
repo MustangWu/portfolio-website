@@ -67,42 +67,42 @@ export default function About() {
       <LogoClouds />
       {/* Fun Facts 区块 - 全新设计感样式 */}
       <div className="mt-16 max-w-4xl mx-auto rounded-2xl shadow-xl bg-gradient-to-br from-pink-100 via-indigo-100 to-blue-100 p-10">
-        <h2 className="text-3xl font-extrabold mb-8 flex items-center gap-2">
+        <h2 className="text-3xl font-extrabold mb-8 flex items-center gap-2 text-gray-900">
           <span role="img" aria-label="sparkles" className="text-2xl">✨</span>
           Fun Facts
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition text-gray-900">
             <span className="text-3xl">✈️</span>
             <div>
               Originally from China, now living in Melbourne, Australia
             </div>
           </div>
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition text-gray-900">
             <span className="text-3xl">🎸</span>
             <div>
               Unusual busker in Melbourne Central. If you hear guitar music in the station, it might be me!
             </div>
           </div>
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition text-gray-900">
             <span className="text-3xl">🎬</span>
             <div>
               Actress & writer for short film "Lost in Shanghai (2022)", which won hishorts! film festival 2023. The feature film is in development.
             </div>
           </div>
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition text-gray-900">
             <span className="text-3xl">🏄‍♂️</span>
             <div>
               Surfing, tennis, skiing, golf, and dancing are my favorite ways to recharge.
             </div>
           </div>
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition md:col-span-1">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition md:col-span-1 text-gray-900">
             <span className="text-3xl">🧑‍🔬</span>
             <div>
               Research intern at Exertion Games Lab, building interactive devices for para-surfing.
             </div>
           </div>
-          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition md:col-span-1">
+          <div className="flex items-start gap-4 bg-white/80 rounded-lg p-5 shadow hover:scale-105 transition md:col-span-1 text-gray-900">
             <span className="text-3xl">💡</span>
             <div>
               Previously worked in the real estate industry with 5i5j and entertainment industry with iQIYI.com. Now exploring how technology empowers human expression.
