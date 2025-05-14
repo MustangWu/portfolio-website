@@ -93,47 +93,83 @@ const constants = {
   projectList: [
     {
       id: 1,
-      title: "FinalNinja",
+      title: "Final Ninja",
       mdFilePath: "/vault/Project1.md",
-      description: "Final Ninja is a desktop AI study buddy that turns finals prep into a fun, gamified experience with smart planning, quizzes, playlists, and progress tracking.",
-      coverAlt: "FinalNinja screenshot",
+      description: "A desktop AI study companion designed for finals, blending smart planning and gamified interaction to help students study efficiently and stay motivated.",
+      coverAlt: "Final Ninja screenshot",
       coverUrl: "/images/finalninja.png",
       picUrl: "/images/finalninja.png",
-      link: "https://github.com/mxxct4git/Final-Ninja",
-      cardContent: "Final Ninja is a desktop AI study buddy that turns finals prep into a fun, gamified experience with smart planning, quizzes, playlists, and progress tracking."
+      link: "https://github.com/MustangWu/Final-Ninja",
+      cardContent: "A desktop AI study companion designed for finals, blending smart planning and gamified interaction to help students study efficiently and stay motivated.",
+      highlights: [
+        "Interactive Godot desktop pet, voice/text commands",
+        "AI study planning with OpenAI API & LangChain",
+        "Auto course login & material extraction",
+        "ADHD-friendly mode, AI quizzes, playlists, leaderboard"
+      ],
+      techStack: [
+        "Godot (GDScript)", "Python", "OpenAI API", "LangChain", "Selenium", "BeautifulSoup", "Spotify API"
+      ]
     },
     {
       id: 2,
       title: "BloomBank",
       mdFilePath: "/vault/Project2.md",
-      description: "BloomBank is an AI-driven platform that simplifies budgeting, boosts financial literacy, and encourages charitable giving through real-time tracking, family collaboration, and personalized insights.",
+      description: "An AI-driven personal finance platform that simplifies budgeting, enhances financial literacy, and encourages charitable giving through real-time tracking and family collaboration.",
       coverAlt: "BloomBank screenshot",
       coverUrl: "/images/bloombank.png",
       picUrl: "/images/bloombank.png",
-      link: "https://github.com/Joan-gao/BloomBank",
-      cardContent: "BloomBank is an AI-driven platform that simplifies budgeting, boosts financial literacy, and encourages charitable giving through real-time tracking, family collaboration, and personalized insights."
+      link: "https://github.com/MustangWu/BloomBank",
+      cardContent: "An AI-driven personal finance platform that simplifies budgeting, enhances financial literacy, and encourages charitable giving through real-time tracking and family collaboration.",
+      highlights: [
+        "Real-time budget & analytics",
+        "AI financial advice & education",
+        "Family/multi-account collaboration",
+        "Automated donation & charity features"
+      ],
+      techStack: [
+        "React", "TypeScript", "Node.js", "Express", "MongoDB", "OpenAI API", "TailwindCSS", "JWT"
+      ]
     },
     {
       id: 3,
       title: "FlowSync",
       mdFilePath: "/vault/Project3.md",
-      description: "Built a forge app for Confluence and Jira to create project plan documents and manage jira tickets automatically with the help of generative AI and rovo agent.",
+      description: "An automation tool for Confluence and Jira, leveraging generative AI to create project documents and manage Jira tickets automatically.",
       coverAlt: "FlowSync screenshot",
       coverUrl: "/images/flowsync.png",
       picUrl: "/images/flowsync.png",
       link: "https://drive.google.com/file/d/1WP-27xQy_4YOBZI7C1rQkSK_MzB2FbNk/view?resourcekey",
-      cardContent: "Built a forge app for Confluence and Jira to create project plan documents and manage jira tickets automatically with the help of generative AI and rovo agent."
+      cardContent: "An automation tool for Confluence and Jira, leveraging generative AI to create project documents and manage Jira tickets automatically.",
+      highlights: [
+        "Atlassian Forge native integration",
+        "AI-generated docs & meeting notes",
+        "Auto Jira ticket creation/assignment",
+        "Rovo Agent smart collaboration"
+      ],
+      techStack: [
+        "Atlassian Forge", "React", "TypeScript", "Node.js", "OpenAI API", "Jira/Confluence API"
+      ]
     },
     {
       id: 4,
       title: "Playful Surfing",
       mdFilePath: "/vault/Project4.md",
-      description: "An ongoing project in which aim to develop a playful surfing experience by introducing interactive technology to amplify the connection with water while surfing.",
+      description: "An innovative project that enhances the surfing experience through interactive technology, amplifying the connection between people and water.",
       coverAlt: "Playful Surfing screenshot",
       coverUrl: "/images/playfulsurf.jpg",
       picUrl: "/images/playfulsurf.jpg",
       link: "https://sites.google.com/utp.edu.co/mariamontoyavr/projects/playful-water-activities/playful-surfing?authuser=0",
-      cardContent: "An ongoing project in which aim to develop a playful surfing experience by introducing interactive technology to amplify the connection with water while surfing."
+      cardContent: "An innovative project that enhances the surfing experience through interactive technology, amplifying the connection between people and water.",
+      highlights: [
+        "Wearable real-time surf sensors",
+        "Arduino/Unity interactive devices",
+        "Web data visualization & analytics",
+        "Multi-user collaboration & sharing"
+      ],
+      techStack: [
+        "Arduino", "Unity", "C#", "Python", "React", "Node.js", "WebSocket", "MongoDB"
+      ]
     }
   ],
 
