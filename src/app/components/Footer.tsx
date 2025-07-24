@@ -56,7 +56,7 @@ export default function Footer2() {
             </svg>
           </a> */}
           {/* <a href="#" className="text-gray-400 hover:text-gray-500">
-            <span className="sr-only">Twitter</span>
+            <span className="sr-only">X</span>
             <svg
               className="w-6 h-6"
               aria-hidden="true"
@@ -73,7 +73,7 @@ export default function Footer2() {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
-            <span className="sr-only">GitHub</span>
+            <span className="sr-only">X</span>
           </a>
           <button
             onClick={copyEmail}

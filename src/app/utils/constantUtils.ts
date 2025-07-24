@@ -61,6 +61,12 @@ const constants = {
 
   timelineItems: [
     {
+      date: "2025.6 - Present",
+      title: "Edrolo",
+      content: "Software Engineer at Edrolo",
+      type: "ongoing"
+    },
+    {
       date: "2024 - Present",
       title: "Monash University",
       content: "Pursuing master of IT while working as a full-stack developer",
@@ -275,7 +281,7 @@ const constants = {
   image: "/images/profile.jpg",
   socialBanner: "/images/your-logo.jpg",
 
-  twitter: "https://x.com/W89506",
+  twitter: "https://x.com/MustangWu0504",
   linkedin: "https://www.linkedin.com/in/mustangwu05042001/",
   locale: "en-US",
 };
